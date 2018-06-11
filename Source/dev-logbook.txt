@@ -1,0 +1,20 @@
+//using cmd (comand line tool in Windows)
+//creating directory
+e:
+cd web-dev/laravel
+mkdir newspaper
+
+//creating new laravel project
+laravel new newspaper
+
+//copied enviroment file
+copy .env.example .env
+
+//generate Application Key
+php artisan key:generate
+
+//create authentication login forms
+php artisan make:auth
+
+//create tables in mysql from artisan
+php artisan migrate
